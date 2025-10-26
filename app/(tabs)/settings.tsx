@@ -1,6 +1,15 @@
+// app/(tabs)/settings.tsx
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import React, { useEffect, useState } from "react";
-import { Alert, StyleSheet, Switch, Text, TextInput, TouchableOpacity, View } from "react-native";
+import {
+    Alert,
+    StyleSheet,
+    Switch,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View,
+} from "react-native";
 
 export default function Settings() {
   const [ttsEnabled, setTtsEnabled] = useState(true);
@@ -30,7 +39,10 @@ export default function Settings() {
     try {
       const settings = { ttsEnabled, defaultRadius, sosContact };
       await AsyncStorage.setItem("@settings", JSON.stringify(settings));
-      Alert.alert("Settings saved!", `Radius: ${defaultRadius}m\nTTS: ${ttsEnabled ? "On" : "Off"}\nSOS: ${sosContact}`);
+      Alert.alert(
+        "Settings saved!",
+        `Radius: ${defaultRadius}m\nTTS: ${ttsEnabled ? "On" : "Off"}\nSOS: ${sosContact}`
+      );
     } catch (error) {
       console.log("Error saving settings:", error);
       Alert.alert("Error saving settings");
@@ -74,11 +86,26 @@ export default function Settings() {
   );
 }
 
+// --------------------- STYLES ---------------------
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 20, backgroundColor: "#f4f8fb" },
-  title: { fontSize: 22, fontWeight: "bold", marginBottom: 20, textAlign: "center" },
-  row: { marginBottom: 15 },
-  label: { fontSize: 16, marginBottom: 6 },
+  container: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: "#f4f8fb",
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: "bold",
+    marginBottom: 20,
+    textAlign: "center",
+  },
+  row: {
+    marginBottom: 15,
+  },
+  label: {
+    fontSize: 16,
+    marginBottom: 6,
+  },
   input: {
     borderWidth: 1,
     borderColor: "#ccc",
@@ -93,5 +120,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 20,
   },
-  buttonText: { color: "#fff", fontWeight: "bold", fontSize: 16 },
+  buttonText: {
+    color: "#fff",
+    fontWeight: "bold",
+    fontSize: 16,
+  },
 });
