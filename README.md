@@ -1,6 +1,14 @@
-# 📍 TrackMe
+<p align="center">
+  <img src="./assets/images/logo.png" alt="TrackMe Logo" width="220"/>
+</p>
 
-**Smart Geofencing & Location-Based Reminder App — Real-Time Tracking, Notifications, and Context-Aware Alerts**
+<h1 align="center">📍 TrackMe</h1>
+
+<p align="center">
+Smart Geofencing & Location-Based Reminder App — Real-Time Tracking, Notifications, and Context-Aware Alerts
+</p>
+
+---
 
 TrackMe is a React Native mobile application built using Expo that helps users create geofences, monitor live locations, receive background notifications, and manage location-based reminders using smart checklist integration.
 
@@ -12,14 +20,15 @@ The application combines geofencing, GPS tracking, notifications, SQLite storage
 
 1. [Features](#-features)
 2. [Screenshots](#-screenshots)
-3. [Architecture](#-architecture)
-4. [Tech Stack](#-tech-stack)
-5. [Project Structure](#-project-structure)
-6. [Setup & Installation](#-setup--installation)
-7. [Core Functionalities](#-core-functionalities)
-8. [Future Improvements](#-future-improvements)
-9. [Author](#-author)
-10. [License](#-license)
+3. [Demo Videos](#-demo-videos)
+4. [Architecture](#-architecture)
+5. [Tech Stack](#-tech-stack)
+6. [Project Structure](#-project-structure)
+7. [Setup & Installation](#-setup--installation)
+8. [Core Functionalities](#-core-functionalities)
+9. [Future Improvements](#-future-improvements)
+10. [Author](#-author)
+11. [License](#-license)
 
 ---
 
@@ -42,39 +51,69 @@ The application combines geofencing, GPS tracking, notifications, SQLite storage
 
 ## 🏠 Home Screen
 
-![Home Screen](./screenshots/home.png)
+![Home Screen](./assets/images/home.jpg)
+
+---
 
 ## 📍 Add Location Screen
 
-![Add Location](./screenshots/add-location.png)
+![Add Location](./assets/images/addlocation.jpg)
+
+---
 
 ## 🗺️ Current Location Tracking
 
-![Current Location](./screenshots/current-location.png)
+![Current Location](./assets/images/current.jpg)
 
-## ⚙️ Settings Screen
+---
 
-![Settings](./screenshots/settings.png)
+## 🚨 SOS Screen
+
+![SOS Screen](./assets/images/sos.jpg)
+
+---
+
+## 🚨 SOS Alert Popup
+
+![SOS Alert](./assets/images/sos1.jpg)
+
+---
+
+## 🔔 Notification Alert
+
+![Notification](./assets/images/notification.png)
+
+---
+
+# 🎥 Demo Videos
+
+## 📱 Geofence Simulation Demo (Using Fake GPS)
+
+[▶️ Watch Simulator Demo](https://drive.google.com/file/d/1FSY_3t-YBeRRsJvahL211obcWifvi9TK/view)
+
+This demo demonstrates geofence triggering inside the Android simulator using a Fake GPS Location app. The device location is changed virtually to move near saved geofence regions, which triggers background notifications and geofence alerts.
+
+- 📍 Simulated GPS location movement
+- 🛰️ Geofence entry and exit detection
+- 🔔 Automatic background notification triggering
+
+---
+
+## 🚨 Manual Geofence Triggering Demo
+
+[▶️ Watch Manual Trigger Demo](https://drive.google.com/file/d/1Jf3vFs7SgtypiWmEjypDX4StUJY2r4DU/view)
+
+This demo demonstrates manual geofence triggering by moving the device location from one real location to another. As the device enters or exits saved geofence regions, the application detects the movement and triggers notification alerts in real time.
+
+- 📱 Real-time location transition monitoring
+- 📍 Manual movement across saved geofence regions
+- 🔔 Live geofence notification alerts
 
 ---
 
 # 🏗️ Architecture
+![System_Architecture](./assets/images/system.png)
 
-```text
-User Location
-      ↓
-Expo Location API
-      ↓
-Location Watch Service
-      ↓
-Geofence Detection Logic
-      ↓
-Expo Task Manager
-      ↓
-Background Notification Trigger
-      ↓
-SQLite Storage & Checklist System
-```
 
 ### Architecture Overview
 
@@ -136,7 +175,8 @@ TrackMe/
 │   └── geofence.ts
 │
 ├── assets/
-├── screenshots/
+│   └── images/
+│
 └── README.md
 ```
 
