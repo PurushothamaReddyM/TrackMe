@@ -22,14 +22,12 @@ The application combines geofencing, GPS tracking, notifications, SQLite storage
 2. [Screenshots](#-screenshots)
 3. [Demo Videos](#-demo-videos)
 4. [Architecture](#-architecture)
-5. [Tech Stack](#-tech-stack)
+5. [Tech Stack](#️-tech-stack)
 6. [Project Structure](#-project-structure)
-7. [Setup & Installation](#-setup--installation)
+7. [Setup & Installation](#️-setup--installation)
 8. [Core Functionalities](#-core-functionalities)
 9. [Future Improvements](#-future-improvements)
 10. [Author](#-author)
-
-
 ---
 
 # ✨ Features
