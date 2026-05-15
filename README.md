@@ -302,7 +302,7 @@ Remind me to buy groceries when I reach D-Mart.
 
 ---
 
-# 👨‍💻 Author
+# Author
 
 ### M Purushothama Reddy
 
