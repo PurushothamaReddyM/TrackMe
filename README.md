@@ -2,7 +2,7 @@
   <img src="./assets/images/logo.png" alt="TrackMe Logo" width="220"/>
 </p>
 
-<h1 align="center">📍 TrackMe</h1>
+
 
 <p align="center">
 Smart Geofencing & Location-Based Reminder App — Real-Time Tracking, Notifications, and Context-Aware Alerts
