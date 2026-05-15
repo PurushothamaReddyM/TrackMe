@@ -109,7 +109,7 @@ This demo demonstrates manual geofence triggering by moving the device location 
 
 ---
 
-# 🏗️ Architecture
+# Architecture
 ![System_Architecture](./assets/images/system.png)
 
 
