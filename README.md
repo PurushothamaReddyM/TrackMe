@@ -28,7 +28,7 @@ The application combines geofencing, GPS tracking, notifications, SQLite storage
 8. [Core Functionalities](#-core-functionalities)
 9. [Future Improvements](#-future-improvements)
 10. [Author](#-author)
-11. [License](#-license)
+
 
 ---
 
